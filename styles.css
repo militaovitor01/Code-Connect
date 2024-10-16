@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --background-color: #00090E;
+    --text-color: #E1E1E1;
+    --primary-color: #81FE88;
+    --secondary-color: #888888;
+    --tag-color: #171D1F;
+    --itens-background:#171D1F;
+
+    --font-family: "Prompt", sans-serif;   
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+    height: 100vh;
+    gap: 27px;
+    padding: 56px 0;
+}
+
+aside {
+    background-color: var(--itens-background);
+    border-radius: 10px;
+    height: 100%;
+    padding: 40px 16px;
+    text-align: center;
+}
+
+.lista {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 80px;
+    align-items: center;
+}
+
+.lista__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.lista__links__botao {
+    text-decoration: none;
+    color: var(--primary-color);
+    border:2px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 1em 2.5em;
+}
+
+.lista__links__botao:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    transition: 0.5s
+}

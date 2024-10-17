@@ -36,52 +36,53 @@
     </aside>
 
     <main>
-        <section>
-            <div class="container__upload__imagem">
-                <div class="container__upload__imagem__vizualizacao">
-                    <img src="" alt="" class="main__imagem">
+        <div class="container__upload__imagem">
+            <div class="container__upload__imagem__vizualizacao">
+                <img src="img/imagem1.svg" alt="" class="main__imagem">
+            </div>
+            
+            <!--Upload de Imagem-->
+            <button id="upload-btn" class="container__upload__imagem__botao">
+                Carregar Imagem <img src="img/upload.svg" alt="upload">
+            </button>
+            <input type="file" id="image-upload" accept="image/" style="display: none;"> <!--"Accept" determina que serão aceitas apenas imagens-->
+
+            <p class="container__upload__imagem__registro">img_projeto.png <img src="img/x.svg" alt=""></p>
+        </div>
+
+        <div class="container__descricao">
+            <h2 class="container__descricao__titulo">Novo Projeto</h2>
+
+            <form class="formulario">
+                <div>
+                    <label for="nome" class="container__descricao__subtitulo" style="display: block">Nome do Projeto</label>
+                    <input type="text" id="nome" name="nome"/>
                 </div>
 
-                <button class="container__upload__imagem__botao">
-                    Carregar Imagem
-                </button>
-            </div>
+                <div>
+                    <label for="descricao" class="container__descricao__subtitulo" style="display: block">Descrição</label>
+                    <textarea name="descricao" id="descricao"></textarea>
+                </div>
 
-            <div class="container__descricao">
-                <h2 class="container__descricao__titulo">Novo Projeto</h2>
+                <div>
+                    <label for="nome" class="container__descricao__subtitulo" style="display: block" >Tags</label>
+                    <input type="text" id="tags" name="tags"/>
+                </div>
 
-                <form>
-                    <div>
-                        <label for="nome">Nome do Projeto</label>
-                        <input type="text" id="nome" name="nome"/>
-                    </div>
+                <ul class="lista__tags">
+                    <li class="lista__tags__item">
+                        <p>Front-End <img src="img/xpreto.svg" alt=""></p>                       
+                    </li>
+                </ul>
 
-                    <div>
-                        <label for="descricao">Descrição</label>
-                        <textarea name="descricao" id="descricao"></textarea>
-                    </div>
-
-                    <div>
-                        <label for="nome">Tags</label>
-                        <input type="text" id="tags" name="tags"/>
-                    </div>
-
-                    <ul class="lista__tags">
-                        <li>
-                            <p>Front-End</p>
-                            <img src="" alt="">
-                        </li>
-                    </ul>
-
-                    <div class="container__botoes">
-                        <button class="container__botoes__botao-descartar">Descartar <img src="img/descartar.svg" alt=""></button>
-                        <button class="container__botoes__botao-publicar">Publicar <img src="img/publicar.svg" alt=""></button>
-                    </div>
-                </form>              
-            </div>
-        </section>
+                <div class="container__botoes">
+                    <button class="container__botoes__botao-descartar">Descartar <img src="img/descartar.svg" alt=""></button>
+                    <button class="container__botoes__botao-publicar">Publicar <img src="img/publicar.svg" alt=""></button>
+                </div>
+            </form>              
+        </div>
     </main>
 
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>

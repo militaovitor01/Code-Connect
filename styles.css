@@ -69,3 +69,120 @@ aside {
     color: var(--background-color);
     transition: 0.5s
 }
+
+main {
+    background-color: var(--itens-background);
+    border-radius: 10px;
+    padding: 32px;
+    display:flex;
+    gap: 24px;
+}
+
+.container__upload__imagem {
+    text-align: center;
+}
+
+.container__upload__imagem__botao {
+    border: 2px solid var(--secondary-color);
+    border-radius: 8px;
+    background-color: var(--itens-background);
+    color: var(--secondary-color);
+    width: 97%;
+    padding: 1em 1.5em;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size:16px;
+    cursor: pointer;
+}
+
+.container__upload__imagem__botao:hover {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    transition: 0.5s
+}
+
+.container__upload__imagem__registro {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0.5em;
+    gap: 2px;
+    font-size: 13px;
+    color: var(--secondary-color);
+}
+
+.container__descricao__titulo {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 46px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.container__descricao__subtitulo {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+form div input, textarea {
+    width: 100%;
+    padding: 8px 16px;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 8px;
+    font-family: var(--font-family);
+    line-height: 22.5px;
+}
+
+form div input {
+    height: 39px;
+}
+
+textarea {
+    height: 161px;
+    resize: none;
+}
+
+.lista__tags {
+    display: flex;   
+}
+
+.lista__tags__item {
+    display: flex;
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    gap: 8px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    list-style-type: none;
+}
+
+.container__botoes__botao-descartar {
+    background-color: var(--itens-background);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 0.5em 1.2em;
+    font-family: var(--font-family);
+    font-size: 18px;
+    font-weight: 500;
+    align-items: center;
+    cursor: pointer;
+}
+
+.container__botoes__botao-publicar {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 0.5em 1.5em;
+    font-family: var(--font-family);
+    font-size: 18px;
+    font-weight: 500;
+    align-items: center;
+    cursor: pointer;
+}

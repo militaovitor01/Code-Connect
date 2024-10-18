@@ -149,6 +149,8 @@ textarea {
 
 .lista__tags {
     display: flex;   
+    flex-wrap: wrap;
+    gap: 1em;
 }
 
 .lista__tags__item {
